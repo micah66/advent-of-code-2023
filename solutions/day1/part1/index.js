@@ -1,6 +1,6 @@
-import fs from 'fs';
+import getInput from '../../../utils/getInput.js';
 
-const lines = fs.readFileSync('../input.txt', 'utf-8').trim().split('\n');
+const lines = getInput({ day: 1, file: 'input' }).split('\n');
 
 function parseLine(line) {
   const chars = line.split('');
